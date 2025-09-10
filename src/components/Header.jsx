@@ -8,12 +8,10 @@ import ThemeToggleButton from '../context/ThemeToggleButton';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
-    const token = localStorage.getItem('token');
-    const role = localStorage.getItem('role');
+    const token = null;
+    const role = null;
 
     const handleLogout = () => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('role');
         router.push('/login');
     };
 
